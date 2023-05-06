@@ -14,7 +14,7 @@ def main_menu():
             continue
         elif choice == "2":
             print("Thank you for playing hope to see you soon!!!")
-            continue
+            break
         else:
             print("invalid choice, please only enter 1 or 2.")
 
