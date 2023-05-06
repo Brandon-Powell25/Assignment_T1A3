@@ -1,4 +1,4 @@
-# open the questions file and read the questions into a list
+# opens question text file and reads the questions
 with open("questions.txt", "r") as f:
     quiz_questions = f.readlines()
 

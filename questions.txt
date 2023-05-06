@@ -1,4 +1,35 @@
-When must you never feed a Gremlin?:Dawn,Midday,Morning,After Midnight
+When must you never feed a Mogwai?:Dawn,Midday,Morning,After Midnight
 Which actor played HUSH HUSH magazine publisher Sid Hudgeons in L.A. Confidential?:Danny DeVito,Hugh Jackman,Ryan Renoylds,Jackie-Chan
 Which role did Gary Oldman play in JFK?:Bill Newman,Lee Harvey Oswald,Guy Bannister,Jack Ruby
 Which fast food company did the movie Super-Size Me focus on?:KFC,Hungry-Jacks,McDonalds,Red-Rooster
+The code in The Matrix comes from what food recipes?:Sushi,Dumplings,Stir-fry,Pad Thai
+What’s the name of Meatloaf’s character in The Rocky Horror Picture Show?:Henry,Eddie,Chuck,Al
+Who drew the sketch of Rose in Titanic?:Leonardo DiCaprio,Billy Zane,James Cameron,Kathy Bates
+Who voices Joy in Pixar’s Inside Out?:Tina Fey,Kathryn Hahn,Ellen DeGeneres,Amy Poehler
+Where were The Lord of the Rings movies filmed?:Ireland,Iceland,New Zealand,Australia
+Freddy Krueger wears a striped sweater that is which colors?:Red and blue,Orange and green,Red and green,Orange and brown
+Who did the cat in the classic movie "The Godfather" belong to?:Francis Ford Coppola,Diane Keaton,Al Pachino,No one—the cat was a stray.
+What score did Elle Woods get on her LSAT in Legally Blonde?:155,166,170,179
+What country does Forrest Gump travel to as part of the All-American Ping-Pong Team?:Australia,France,England,China
+What actor directed "The Bridges of Madison Country?":Clint Eastwood,Steven Spielberg,Martin Scorsese,George Lucus
+Who played "The Kid" in "Purple Rain" movie?:Robert De Niro,Jack Nicholson,Prince,Michael Jackson
+Who wrote the short story upon which "Shawshank Redemption" was based on?:John Woo,Ridley Scott,Tim Burton,Stephen King
+Where did Sally give Harry a lift to where they first meet?:Canada,New-York,Russia,France
+Who was Tom Cruise's co-star in "Far and Away"?:Nicole Kidman,Elizabeth Taylor,Bette Davis,Cate Blanchett
+Who played the role of Arnie's parnter Gib in True Lies?:Tom Hanks,Denzel Washington,Tom Arnold,Sidney Poitier
+Who was the first black actress to win the Best Actress Oscar?:Lynn Whitfield,Halle Berry,Regina Hall,Viola Davis
+Which film duo's band is called Wyld Stallyns?:Bill and Ted,Lenny and Squiggy,Wyatt and Billy,Will Smith and Carlton Banks
+What hotel features in "The Shining?":Caesars palace,Treasure Island,The Overlook Hotel,Park Hyatt Tokyo
+What was the first movie to win all 11 Oscars it was nominated for?:Avatar,The Lord of the Rings Return of the King,The Lord of the Rings The Twin Towers,John Wick 2
+Who was the leading man in The Rock, Face/off and Con-Aie?:Nicolas Cage,Al Pacino,James Dean,Bruce-Lee
+
+
+
+
+
+
+
+
+
+
+
