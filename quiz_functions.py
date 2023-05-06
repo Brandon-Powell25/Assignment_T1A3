@@ -5,7 +5,7 @@ def start_quiz():
     with open("questions.txt", "r") as f:
         quiz_questions = [line.strip() for line in f.readlines()]
 
-# open the answers file and read the answers into a dictionary
+    # open the answers file and read the answers into a dictionary
     with open("answers.txt", "r") as f:
         quiz_answers = {}
         for line in f:
@@ -15,7 +15,7 @@ def start_quiz():
                 question, answer = line.strip(), "No answer provided"
             quiz_answers[question.strip()] = answer.strip()
 
-# ask question in order
+    # ask question in order
     for i, question in enumerate(quiz_questions):
         try:
             # Split questions and choices
@@ -34,7 +34,7 @@ def start_quiz():
             if choices[int(answer)-1] == correct_answer:
                 print("Whoop Whoop Correct!!!")
             else:
-                print("OH NO Incorrect!!!!")
+                print(f"OH NO Incorrect!!!! Correct answer is: {correct_answer}")
         except UnboundLocalError:
             print("Error: 'choice' varibale not defined.")
             continue
@@ -42,6 +42,16 @@ def start_quiz():
             print(f"Error: {e}")
             break
 
-   
+    while True:
+        choice = input("Want to play again? (Y/N): ")
+        if choice.lower() == "y":
+            # Return true to indicate if the user wants to play again
+            return True
+        elif choice.lower() == "n":
+            # Return true to indicate that the user want to exit
+            return False
+        else:
+            print("Invalid Input. Please choose 1 or 2 ")
+
 
         
