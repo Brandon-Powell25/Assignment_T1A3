@@ -1,5 +1,8 @@
 import random 
 
+class QuizFormatError(Exception):
+    pass
+
 def start_quiz(name):
     while True:
     
@@ -25,7 +28,7 @@ def start_quiz(name):
         score = 0
 
         # Display welcome message
-        print(f"Welcome {name} to this Quiz! Good Luck!!!!!!")
+        print(f"Welcome {name} to this Quiz! Good Luck!!!!!!\n")
 
         # ask question in order
         for i, question in enumerate(quiz_questions):
@@ -35,10 +38,12 @@ def start_quiz(name):
                 # Split questions and choices
                     question, choices = question.split(":")
                     choices = choices.split(",")
+                    # Shuffle answer choices
+                    random.shuffle(choices)
                 else:
-                    # Handle the case where line as no colon
-                    print(f"Error: Question {i+1} is not formatted correctly. skipping....")
-                    continue
+                    # Raises an error if the format input isnt formatted right
+                    raise QuizFormatError(f"Error: Question {i+1} is not formatted correctly.")
+                    
                 # print choices and questions
                 print(f"Question {i+1}: {question}")
                 for j, choice in enumerate(choices):
@@ -49,46 +54,25 @@ def start_quiz(name):
                 correct_answer = quiz_answers[question.strip()]
                 # Answers is incorrect it will check
                 if choices[int(answer)-1] == correct_answer:
-                    print("Whoop Whoop Correct!!!")
+                    print("Whoop Whoop Correct!!!\n")
                     score += 1
                 else:
-                    print(f"OH NO Incorrect!!!! Correct answer is: {correct_answer}")
+                    print(f"OH NO Incorrect!!!! Correct answer is: {correct_answer}\n")
             # Except the error and will continue
             except UnboundLocalError:
                 print("Error: 'choice' varibale not defined.")
                 continue
+            except QuizFormatError as e:
+                print(e)
             except Exception as e:
                 print(f"Error: {e}")
 
             # print the final score
-        print(f"Your score is {score}/{len(quiz_questions)}.")   
+        print(f"Your score is {score}/{len(quiz_questions)}.")  
+        with open("highscores.txt", "a") as f:
+            f.write(f"{name}:{score}\n")
 
-        try:
-            with open("highscores.txt", "r") as f:
-                highscores = [line.strip().split(",") for line in f.readlines()]
-        except FileNotFoundError:
-            highscores = []
-
-        #add highscore to list
-        highscores.append((name, score))
-
-        # hishscores in decending order
-        highscores.sort(key=lambda x: x[1], reverse=True)
-
-        # only top 10 highscores
-        highscores = highscores[:10]
-
-        #save highscored to file
-        with open("highscores.txt", "w") as f:
-            for name, score in highscores:
-                f.write(f"{name},{score}\n")
-
-        # Display highscores
-        print("highscores:")
-        for i, (name, score) in enumerate(highscores):
-            print(f"{i+1}. {name} - {score}")
-
-                
+    # If "y" will play again or if "n" will return to main menu      
         while True:
             # ask user if want to play again
             choice = input("Want to play again? (Y/N): ")
@@ -99,7 +83,22 @@ def start_quiz(name):
             # Return true to indicate that the user want to exit
                 return False
             else:
-                print("Invalid Input. Please choose 1 or 2 ")
+                print("Invalid Input. Please choose y or n ")
+
+def view_highscore():
+        try:
+            with open("highscores.txt", "r") as f:
+                highscores = [line.strip().split(":") for line in f.readlines()]
+        except FileNotFoundError:
+            highscores = []
+
+        # returns score as a list of tuples
+        return highscores     
+
+        
+
+
+        
 
 
         
