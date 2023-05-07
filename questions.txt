@@ -22,14 +22,4 @@ Which film duo's band is called Wyld Stallyns?:Bill and Ted,Lenny and Squiggy,Wy
 What hotel features in "The Shining?":Caesars palace,Treasure Island,The Overlook Hotel,Park Hyatt Tokyo
 What was the first movie to win all 11 Oscars it was nominated for?:Avatar,The Lord of the Rings Return of the King,The Lord of the Rings The Twin Towers,John Wick 2
 Who was the leading man in The Rock, Face/off and Con-Air?:Nicolas Cage,Al Pacino,James Dean,Bruce-Lee
-
-
-
-
-
-
-
-
-
-
-
+Which actor hasn't played as The Joker?:Jack Nicholson,Sean Penn,Jared Leto,Mark Hamill
