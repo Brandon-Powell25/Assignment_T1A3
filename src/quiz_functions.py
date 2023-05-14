@@ -74,7 +74,6 @@ def play_again():
 
 def start_quiz(name, questions_file, answers_file, quiz_type):
     while True:
-    
         # open questions files and reads the questions
         quiz_questions, quiz_answers = read_files(questions_file, answers_file)
 
